@@ -1,0 +1,88 @@
+@font-face {font-family: 'MonopolixBold';src: url('https://raw.githubusercontent.com/lowe493/BGWedding/refs/heads/main/MonopolixBold.ttf');}
+@font-face {font-family: 'MonopolixLight';src: url('https://raw.githubusercontent.com/lowe493/BGWedding/refs/heads/main/MonopolixLight.ttf');}
+@font-face {font-family: 'HideAway';src: url('https://raw.githubusercontent.com/lowe493/BGWedding/refs/heads/main/HideAway.ttf');}
+
+/* LEFT PANEL */
+
+div#title {
+    font-family: HideAway !important;
+}
+
+div#npn-name1, div#npn-plus, div#npn-name2 {
+    font-family: HideAway !important;
+    text-shadow: 4px 4px 6px #001428;
+}
+
+div#subtitle {
+    font-family: MonopolixLight !important;
+    text-transform: uppercase !important;
+    margin-top: 3em !important;
+    text-shadow: 4px 4px 6px #001428;
+}
+
+#background {
+    opacity: 40%;
+}
+
+/* MAIN PAGE */
+
+div#rsvptitle, div#rsvptxt, .dateloc-title, .count_label {
+    font-family: HideAway !important;
+    color: #8c9dad !important;
+}
+
+.count_label {
+    font-size: 30px;
+}
+
+div#description, .count_num, div#rsvpsubtitle, a {
+    font-family: MonopolixLight !important;
+}
+
+
+.subquestion #rsvptitle {
+    font-family: MonopolixLight !important;
+    font-size: 35px !important;
+}
+
+.btn.btn1:first-of-type a::after {
+    content: " - PHONE AND QUOTE CODE: GORD06092025";  /* This will add the text after the existing link text */
+    font-family: MonopolixBold;
+    color: #8c9dad;               /* Optional styling */
+}
+
+.footerlogo {
+    display: none !important;
+}
+
+.schedule {
+    grid-template-columns: 0fr 2fr !important;
+}
+
+.sch_date, .sch_day {
+    display: none !important;
+}
+
+.registry::before {
+    content: "If you were thinking of giving a gift to help us on our way, a donation to our wishing well would really make our day."
+    font-size: 20px;
+    color: var(--txtcolor);
+    line-height: 1.6;
+    margin-block: 10px 20px;
+    font-family: MonopolixLight;
+    font-style: var(--pfonti);
+    text-align: center;
+}
+/* RSVP */
+input[type=radio]:checked + .btrsvp.yes {
+    border: 1px solid rgb(4 185 4);
+    color: rgb(4 185 4) !important;
+}
+
+input[type=radio]:checked + .btrsvp.yes:before {
+    color: rgb(4 185 4)
+}
+
+input[type=radio]:checked + .btrsvp.no {
+    color: #f44336 !important;
+}
